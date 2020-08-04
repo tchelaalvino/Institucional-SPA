@@ -12,7 +12,7 @@ Desenvolvimento de SPA Responsiva, utilizando o conceito básico do React e Boot
 | carousel | carousel para testemunhos |
 | footer | inicialmente escondido, interação com mouse hover |
 
-![](header.png)
+![header](https://user-images.githubusercontent.com/44410029/89317525-d9a01c80-d653-11ea-826d-6147c18e97d1.PNG)
 
 ### Configuração de desenvolvimento :keyboard:
 
