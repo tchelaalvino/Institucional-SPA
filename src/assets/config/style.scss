@@ -1,0 +1,203 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+
+.header {
+  opacity: 0.8;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #ff9a76;
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+  .collapse {
+    height: auto;
+  }
+  .collapsing, .collapse {
+    text-align: center;
+    transition: height .75s ease;
+    background-color: #f7f7ee;
+    .group-links {
+      .item_link {
+        font-weight: 600;
+        color: #758184;
+      }
+    }
+  }
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  z-index: 999;
+  position: fixed;
+  overflow: hidden;
+  background-size: cover;
+  transition: all 1s ease;
+  text-transform: lowercase;
+  &:hover, &:active {
+    height: 18em;
+    transition: all 1s ease;
+  }
+
+  #button {
+    width: 45px;
+    height: 45px;
+    border: #727172 7px solid;
+    border-radius: 35px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 1s ease;
+    &:hover, &:active {
+      width: 35px;
+      height: 35px;
+      border: #3a3a3a 7px solid;
+      position: relative;
+      transition: all 1s ease;
+    }
+  }
+
+  .group_media {
+    background-color: #fff;
+    .media_action {
+      color: #66757F;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  }
+}
+.section {
+  color: #758184;
+  letter-spacing: 0.25rem;
+  font-family: 'Montserrat';
+  background-color: #f7f7ee;
+  .boll_banner {
+    position: relative;
+    .boll_text {
+      top: 0;
+      left: 5%;
+      width: 120px;
+      position: absolute;
+      .text_banner {
+        font-weight: 900;
+        font-size: 2rem;
+      }
+    }
+  }
+  .boll_exposed {
+    .exp_block {
+      font-size: 1.25rem;
+    }
+    .expo_image {
+      .image-border {
+        width: 100%;
+        height: 100%;
+        transition: transform 3s;
+        &:hover, &:active {
+          transform: rotate(1260deg);
+        }
+      }
+    }
+    .expo_track {
+      width: 100%;
+      background-color: rgba(255, 193, 7, 0.6);
+      .card_track {
+        width: 300px;
+        height: 300px;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 60px auto;
+        position: relative;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        .front, .back {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          backface-visibility: hidden;
+        }
+        .back {
+          padding: 1.25rem;
+          transform: rotateX(180deg);
+        }
+        .potato {
+          background-color: #ecd745;
+        }
+        .lemon {
+          background-color: #85bb65;
+        }
+        .tomato {
+          background-color: #ff6347;
+        }
+        &:hover, &.active {
+          transform: rotateX(180deg);
+        }
+      }
+    }
+    .testimonials {
+      .carousel {
+        .config_carousel {
+          .indicator {
+            background-color: #85bb65;
+            height: 8px;
+          }
+        }
+      }
+      .card {
+        border: 0;
+        max-width: 320px;
+        border-radius: 6%;
+        margin: 50px auto;
+        .card-header {
+          min-height: 150px;
+          background-color: #ff9a76;
+        }
+        .card-body {
+          min-height: 250px;
+          text-align: center;
+          .image_test {
+            width: 50%;
+            height: auto;
+            bottom: 90px;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.5);
+          }
+          .quotes {
+            bottom: 60px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .section {
+    .boll_banner {
+      .boll_text {
+        top: 20%;
+        .text_banner {
+          font-size: 5.62rem;
+        }
+      }
+    }
+    .boll_exposed {
+      .exp_block {
+        font-size: 2.5rem;
+      }
+    }
+    .expo_track {
+      .card_track {
+        margin: 60px 60px;
+      }
+    }
+  }
+}
